@@ -1,0 +1,11 @@
+span {
+  margin: 0 15px;
+}
+
+button {
+  width: 45px;
+  background-color: black;
+  color: white;
+  border-color: transparent;
+  border-radius: 10px;
+}
