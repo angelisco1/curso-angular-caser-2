@@ -1,0 +1,12 @@
+<div [ngStyle]="{marginTop: '30px'}">
+  <div (click)="toggleCollapse()">
+    <h1>{{titulo}}</h1>
+  </div>
+  <div [ngClass]="{cerrado: estaCerrado, abierto: !estaCerrado, contenido: true}">
+    <ng-content></ng-content>
+  </div>
+</div>
+
+<!-- <app-acordeon>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque soluta officia laborum facilis voluptate. Consequuntur vero voluptatum at in temporibus consectetur eligendi quis rem fugit quisquam! Quod, minus veniam!</p>
+</app-acordeon> -->

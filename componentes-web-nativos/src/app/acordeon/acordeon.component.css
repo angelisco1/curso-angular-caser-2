@@ -1,0 +1,12 @@
+div.contenido {
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+div.abierto {
+  height: auto;
+}
+
+div.cerrado {
+  height: 0px;
+}

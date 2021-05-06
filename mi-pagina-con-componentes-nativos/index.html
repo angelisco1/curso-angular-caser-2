@@ -7,9 +7,33 @@
   <title>Document</title>
 </head>
 <body>
-  <mi-contador></mi-contador>
+  <mi-contador cuenta="5"></mi-contador>
+
+  <mi-acordeon titulo="Ingredientes">
+    <ul>
+      <li>Patatas</li>
+      <li>Sal</li>
+      <li>Pimienta</li>
+    </ul>
+  </mi-acordeon>
+
+  <mi-acordeon titulo="Post de Angular">
+    <p>Angular es ...</p>
+    <p>Empezamos instalando ...</p>
+  </mi-acordeon>
+
+  <mi-acordeon titulo="Contador">
+    <p>Par o impar: <span id="spanCuenta"></span></p>
+  </mi-acordeon>
 
   <script src="polyfills.js"></script>
   <script src="main.js"></script>
+
+  <script>
+    document.querySelector('mi-contador').addEventListener('cuentaCambiada', (evento) => {
+      console.log(evento.detail);
+      // document.getElementById('spanCuenta').innerText = evento.detail;
+    })
+  </script>
 </body>
 </html>
