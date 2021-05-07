@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PanelAdminComponent } from './panel-admin/panel-admin.component';
+import { AdminRouting } from './admin.routes';
 
 
 
@@ -9,7 +10,8 @@ import { PanelAdminComponent } from './panel-admin/panel-admin.component';
     PanelAdminComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AdminRouting
   ]
 })
 export class AdminModule { }

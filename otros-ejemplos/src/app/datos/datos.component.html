@@ -1,0 +1,10 @@
+<h2>Ofertas de trabajo</h2>
+
+<button type="button" (click)="crearOferta()">Nueva oferta</button>
+
+
+<div *ngFor="let oferta of ofertas">
+  <h3>{{oferta.nombre}}</h3>
+  <p>{{oferta.descripcion}}</p>
+  <img [src]="oferta.imgUrl" alt="Logo de la empresa">
+</div>
