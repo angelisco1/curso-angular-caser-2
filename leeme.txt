@@ -1,5 +1,31 @@
 = Angular Elements
 
+Comando para añadir Angular Elements al proyecto y poder convertir los componentes de Angular en componentes nativos:
 
+- ng add @angular/elements
+
+Comando para añadir opciones extra a la hora de generar la carpeta de distribución con los componentes web nativos:
+
+- ng add ngx-build-plus
+
+Comando que tenemos que lanzar para generar la carpeta de distribución:
+
+- npm run build:wc
+
+El anterior comando ejecuta el script de npm con el nombre build:wc que se encarga de lanzar el comando: ng build --prod --single-bundle true --output-hashing none
+
+La opción de single-bundle (nos lo añade ngx-build-plus) se encarga de generar un archivo main.js en la carpeta de dist con el código final con los web components.
 
 = PWA
+
+Comando para convertir el proyecto en PWA:
+
+- ng add @angular/pwa
+
+Una vez configurado el service worker hay que generar el código de producción con el siguiente comando:
+
+- ng build --prod
+
+Y para probar la PWA tenemos que servir el contenido de /dist/nombre-proyecto lanzando por ejemplo el siguiente comando:
+
+- npx http-serve
